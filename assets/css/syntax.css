@@ -1,0 +1,111 @@
+/* 1. Simple Selectors */
+
+/* Universal Selector - Add padding and margin reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ID Selector - Style the header */
+#header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Class Selector - Style content section */
+.content {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Type Selector - Style all h2 elements */
+h2 {
+    font-size: 1.5em;
+    color: #333;
+}
+
+
+/* 2. Combinator Selectors */
+
+/* descendant selector */
+.content p {
+    font-size: 1.1em;
+    color: purple;
+}
+
+#products ul li {
+    padding: 10px;
+    font-size: 1em;
+    color: #333;
+}
+/* direct child selector */
+.content > a {
+    color: blue;
+    text-decoration: none;
+}
+
+
+
+
+/* 3. Pseudo-Class Selectors(certain state) */
+
+
+a:hover {
+    color:red;
+}
+
+
+.footer p:first-child {
+    font-weight: bold;
+}
+
+/* 4. Pseudo-Element Selectors (select & style part of element)*/
+
+
+#products h2::before {
+    content: "🛒 ";
+    padding: 5px;
+    font-size: 1.5em;
+}
+
+
+button::after {
+    content: " Button";
+}
+
+/* 5. Attribute Selectors */
+
+/* [href] - Style all links with href attribute */
+a[href] {
+    text-decoration: underline;
+}
+
+/* [type="email"] - Style the email input field */
+input[type="email"] {
+    border: 2px solid #ddd;
+    padding: 8px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+/* [type="text"] - Style the text input field */
+input[type="text"] {
+    border: 2px solid #ddd;
+    padding: 8px;
+    margin-top: 10px;
+    width: 200px;
+}
+
+/* [type="submit"] - Style the submit button */
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
