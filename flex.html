@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flex</title>
+<style>
+        
+        .card-container {
+            display: flex;                      
+            flex-wrap: wrap;                    
+            justify-content: space-between;     
+            align-items: flex-start;            
+            gap: 20px;                          
+            padding: 20px;                      
+            background-color: #f5f5f5;          
+        }
+ 
+        .card {
+            background-color: #4CAF50;        
+            color: white;                     
+            width: 100%;                      
+            max-width: 300px;                  
+            padding: 20px;                     
+            text-align: center;                
+            border-radius: 8px;                
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+            transition: transform 0.3s ease;   
+        }
+ 
+    
+      
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;                  
+                max-width: none;               
+            }
+        }
+</style>
+</head>
+<body>
+ 
+    <div class="card-container">
+<div class="card">
+<h2>Card 1</h2>
+<p>This is a description of the first card. It looks great!</p>
+</div>
+<div class="card">
+<h2>Card 2</h2>
+<p>This is a description of the second card. Flexbox makes this layout easy!</p>
+</div>
+<div class="card">
+<h2>Card 3</h2>
+<p>This is a description of the third card. Let's make this responsive!</p>
+</div>
+<div class="card">
+<h2>Card 4</h2>
+<p>This is a description of the fourth card. All cards are evenly spaced!</p>
+</div>
+</div>
+ 
+</body>
+</html>

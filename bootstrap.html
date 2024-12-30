@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Cakes - Cake Website</title>
+  
+  <!-- Bootstrap CSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <style>
+    /* Custom styles for header and footer */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Hero Section Styles */
+    .hero {
+      background: url('./assets/images/cafe.jpg') no-repeat center;
+      background-size: cover;
+      color: black;
+      font-size: 28px;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 2.5rem; 
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+    }
+
+    .card img{
+        height: 300px;
+    }
+    /* Services Section Styles */
+    .services .card {
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .services h3 {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .services p {
+      font-size: 1rem;
+      text-align: center;
+      color: #555;
+    }
+
+    /* Footer Section Styles */
+    .footer {
+      background-color: #343a40;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .footer a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Contact Form Styles */
+    .contact-form .form-control {
+      border-radius: 10px;
+      padding: 12px 15px;
+      font-size: 14px;
+    }
+
+    .contact-form .form-label {
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .contact-form .btn {
+      border-radius: 20px;
+      padding: 12px 25px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+    }
+
+    .contact-form .btn:hover {
+      background-color: #0056b3;
+    }
+
+    .contact-section {
+      background-color: #f1f1f1;
+      padding: 50px 0;
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+      
+      .hero p {
+        font-size: 1.2rem;
+      }
+
+      .contact-form .form-control {
+        padding: 10px;
+      }
+
+      .contact-form .form-label {
+        font-size: 13px;
+      }
+
+      .footer {
+        padding: 15px;
+      }
+
+      .footer a {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Delicious Cakes</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Our Cakes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Welcome to Delicious Cakes</h1>
+      <p>Indulge in the best cakes, made with love and passion. Order your favorite today!</p>
+      <a href="#services" class="btn btn-primary btn-lg">Explore Our Cakes</a>
+    </div>
+  </section>
+
+  <!-- Cakes Section -->
+  <section id="services" class="container py-5">
+    <h2 class="text-center mb-4">Our Cakes</h2>
+    <div class="row">
+      <!-- Cake 1 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assets/images/choco.jpg" class="card-img-top" alt="Chocolate Cake">
+          <div class="card-body">
+            <h3>Chocolate Cake</h3>
+            <p>Rich and decadent chocolate cake topped with creamy chocolate ganache. Perfect for chocolate lovers.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Cake 2 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assets/images/stab.jpg" class="card-img-top" alt="Strawberry Cake">
+          <div class="card-body">
+            <h3>Strawberry Cake</h3>
+            <p>Fresh strawberries with a light and fluffy sponge. The perfect dessert for a summer celebration.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Cake 3 -->
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assets/images/vanila.jpg" class="card-img-top" alt="Vanilla Cake">
+          <div class="card-body">
+            <h3>Vanilla Cake</h3>
+            <p>A classic vanilla sponge cake with a smooth buttercream frosting. Simple  and elegant yet delicious!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="text-center mb-4">Order Custom Cake</h2>
+      <p class="text-center">Have a special occasion? Fill out the form below to order your custom cake.</p>
+      <div class="contact-form">
+        <form>
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Cake Order Details</label>
+            <textarea class="form-control" id="message" rows="4" placeholder="Describe the cake you want" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn">Place Order</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2024 Delicious Cakes</p>
+    <div>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">FAQ</a>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

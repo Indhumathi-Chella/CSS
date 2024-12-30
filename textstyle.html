@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Styling in CSS</title>
+    <style>
+        /* Font Styling (Font Family, Size, Weight) */
+        .product-name {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Text Alignment */
+        .description {
+            text-align: center;
+            font-size: 18px;
+            color: #7f8c8d;
+        }
+
+        /* Text Decoration (Underline, Strikethrough) */
+        .special-offer {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+        .old-price {
+            text-decoration: line-through;
+            color: #e74c3c;
+        }
+
+        /* Text Transformation (Uppercase, Capitalize) */
+        .product-category {
+            text-transform: uppercase;
+            color: #2980b9;
+        }
+        .product-type {
+            text-transform: capitalize;
+            font-style: italic;
+            color: #8e44ad;
+        }
+
+        /* Text Shadow */
+        .highlight {
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.2);
+            font-size: 22px;
+        }
+
+        /* Text Overflow */
+        .long-description {
+            width: 300px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-size: 16px;
+            color: #95a5a6;
+        }
+
+        /* Line Height */
+        .customer-review {
+            line-height: 1.8;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Welcome to Our Online Store</h1>
+
+    <!-- Product Name -->
+    <h2 class="product-name">SuperSmartphone 2024</h2>
+    <p class="description">A powerful new smartphone designed for tech enthusiasts. Explore advanced features and exceptional performance.</p>
+
+    <!-- Special Offer Text -->
+    <p class="special-offer">Limited Time Offer!</p>
+
+    <!-- Price -->
+    <p><span class="old-price">$999</span> <span class="product-price">$799</span></p>
+
+    <!-- Product Category -->
+    <p class="product-category">electronics</p>
+
+    <!-- Product Type -->
+    <p class="product-type">wireless earphones</p>
+
+    <!-- Highlight Text -->
+    <p class="highlight">Best seller of the month!</p>
+
+    <!-- Long Description with Overflow -->
+    <p class="long-description">This smartphone is equipped with cutting-edge technology, including AI-powered cameras, 5G connectivity, and a long-lasting battery. It is designed to keep you ahead of the competition, no matter what.</p>
+
+    <!-- Customer Review with Line Height -->
+    <p class="customer-review">“Absolutely love this phone! It’s fast, reliable, and the camera quality is amazing. The battery lasts all day, even with heavy use. Highly recommend it!”</p>
+
+</body>
+</html>
